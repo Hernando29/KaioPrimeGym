@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.example.hppavilionabbas.kaioprimegym.utilidades.Utilidades;
+
 public class ConexionSQLiteHelper extends SQLiteOpenHelper
 {
 
@@ -17,7 +19,7 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper
     @Override
     public void onCreate(SQLiteDatabase db)
     {
-        db.execSQL(Uitilidades.CREAR_TABLA_USUARIO);
+        db.execSQL(Utilidades.CREAR_TABLA_USUARIO);
     }
 
     @Override
