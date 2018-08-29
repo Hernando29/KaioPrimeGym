@@ -14,7 +14,8 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="241dp" />
+        tools:layout_editor_absoluteY="241dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/txtClave"
@@ -23,7 +24,8 @@
         android:ems="10"
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="303dp" />
+        tools:layout_editor_absoluteY="303dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
@@ -33,7 +35,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         tools:layout_editor_absoluteX="83dp"
         tools:layout_editor_absoluteY="361dp"
-        tools:text="Iniciar Sesión " />
+        tools:text="Iniciar Sesión "
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -41,7 +44,8 @@
         android:layout_height="226dp"
         app:srcCompat="@drawable/logo"
         tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="3dp" />
+        tools:layout_editor_absoluteY="3dp"
+        tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>
 
 
