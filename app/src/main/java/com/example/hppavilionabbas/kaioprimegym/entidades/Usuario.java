@@ -55,14 +55,6 @@ public class Usuario
         this.apellidos = apellidos;
     }
 
-    public Acudiente getAcudiente() {
-        return acudiente;
-    }
-
-    public void setAcudiente(Acudiente acudiente) {
-        this.acudiente = acudiente;
-    }
-
     public String getCedula() {
         return cedula;
     }

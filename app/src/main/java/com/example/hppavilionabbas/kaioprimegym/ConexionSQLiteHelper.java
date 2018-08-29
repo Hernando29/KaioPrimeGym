@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class ConexionSQLiteHelper extends SQLiteOpenHelper
 {
 
+
+
     public ConexionSQLiteHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version)
     {
         super(context, name, factory, version);
@@ -15,12 +17,13 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper
     @Override
     public void onCreate(SQLiteDatabase db)
     {
-
+        db.execSQL(Uitilidades.CREAR_TABLA_USUARIO);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
     {
-
+            db.execSQL("DROP TABLE IF EXISTS 'usuario' ");
+            onCreate(db);
     }
 }
