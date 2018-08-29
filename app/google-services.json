@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "521052306047",
+    "firebase_url": "https://kaioprimegym-1b786.firebaseio.com",
+    "project_id": "kaioprimegym-1b786",
+    "storage_bucket": "kaioprimegym-1b786.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521052306047:android:dfdc17e02870c129",
+        "android_client_info": {
+          "package_name": "com.example.hppavilionabbas.kaioprimegym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521052306047-97fb6mvugpj69vlkev0l0gonnm3imaeh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hppavilionabbas.kaioprimegym",
+            "certificate_hash": "01ee976bd2ad95be63790ba5b6f25e9ebe6a0e79"
+          }
+        },
+        {
+          "client_id": "521052306047-bjcendar3rg52kadp9akq31djlsc3lol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvSkOQxehNfCI9oKqxr0bTKMNkpmbL7xk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521052306047-bjcendar3rg52kadp9akq31djlsc3lol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
