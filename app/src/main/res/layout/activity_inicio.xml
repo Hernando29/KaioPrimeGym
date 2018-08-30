@@ -1,49 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#000"
     tools:context=".LoginActivity">
 
-    <EditText
-        android:id="@+id/txtEmail"
-        android:layout_width="346dp"
-        android:layout_height="46dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="241dp"
-        tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/txtClave"
-        android:layout_width="346dp"
-        android:layout_height="46dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="303dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="219dp"
-        android:layout_height="49dp"
-        android:background="@color/colorAccent"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="361dp"
-        tools:text="Iniciar Sesión "
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="320dp"
-        android:layout_height="226dp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="3dp"
-        tools:ignore="MissingConstraints" />
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_height="306dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="18dp"
+        android:text="Te damos la bienvenida al gimnasio KAIO PRIME GYM, la integridad de cada uno de nuestros usuarios es prioritaria siempre y cuando estes bajo nuestra asesoria. Si tu realizas alguna actividad fuera de la instrucción de alguno de nuestros instructores de planta en este caso tu intregridad corre por cuenta tuya y no nos hacemos responsables si se ve afectada, sé responsable y organizado con el uso de nuestro equipo deportivo, ten en cuenta el reglamento del gimnasio, informar desde el principio si sufres algun tipo de enfermedad o lesión. Nuestros instructores están disponibles para ti, nunca pierdas tus objetivos ni tu motivación; entrena, desacansa, no olvides hidratarte y ten en cuenta siempre tu plan de entrenamiento y nuesra asesoría gracias. " />
+</RelativeLayout>
