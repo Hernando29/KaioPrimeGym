@@ -1,22 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#000"
-    tools:context=".LoginActivity">
+    tools:context=".Inicio">
 
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="48dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"></LinearLayout>
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:textColor="@android:color/white"
-        android:layout_height="306dp"
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="80dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="18dp"
-        android:text="Te damos la bienvenida al gimnasio KAIO PRIME GYM, la integridad de cada uno de nuestros usuarios es prioritaria siempre y cuando estes bajo nuestra asesoria. Si tu realizas alguna actividad fuera de la instrucción de alguno de nuestros instructores de planta en este caso tu intregridad corre por cuenta tuya y no nos hacemos responsables si se ve afectada, sé responsable y organizado con el uso de nuestro equipo deportivo, ten en cuenta el reglamento del gimnasio, informar desde el principio si sufres algun tipo de enfermedad o lesión. Nuestros instructores están disponibles para ti, nunca pierdas tus objetivos ni tu motivación; entrena, desacansa, no olvides hidratarte y ten en cuenta siempre tu plan de entrenamiento y nuesra asesoría gracias. " />
+        android:layout_marginBottom="23dp"
+        android:background="@android:color/transparent"
+        android:text="Atras"
+        android:textColor="@color/colorRed"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="80dp"
+        android:layout_height="53dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/prevBtn"
+        android:background="@android:color/transparent"
+        android:text="Siguiente"
+        android:textColor="@color/colorRed" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/slideWiewPager"
+        android:layout_width="match_parent"
+        android:layout_height="543dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"></android.support.v4.view.ViewPager>
+
 </RelativeLayout>
