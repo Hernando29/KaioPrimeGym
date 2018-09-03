@@ -18,7 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Inicio"  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" ></activity>
+        <activity
+            android:name=".Inicio"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity android:name=".Login"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
 package com.example.hppavilionabbas.kaioprimegym;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.text.Html;
@@ -17,6 +18,7 @@ public class Inicio extends Activity {
     private SliderAdapter sliderAdapter;
     private Button mBackBtn;
     private Button mNextBtn;
+    private Button mEndBtn;
 
     private int mCurrentPage;
 
@@ -30,6 +32,7 @@ public class Inicio extends Activity {
 
         mNextBtn = (Button) findViewById(R.id.nextBtn);
         mBackBtn = (Button) findViewById(R.id.prevBtn);
+        mEndBtn = (Button)  findViewById(R.id.endBtn);
 
         sliderAdapter = new SliderAdapter(this);
 
@@ -52,6 +55,16 @@ public class Inicio extends Activity {
             public void onClick(View view) {
 
                 mSlideViewPager.setCurrentItem(mCurrentPage-1);
+            }
+        });
+
+        mEndBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(Inicio.this, Login.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
@@ -91,30 +104,48 @@ public class Inicio extends Activity {
                 if(i == 0)
                 {
                     mNextBtn.setEnabled(true);
+                    mNextBtn.setVisibility(View.VISIBLE);
                     mBackBtn.setEnabled(false);
                     mBackBtn.setVisibility(View.INVISIBLE);
 
+
+                    mEndBtn.setEnabled(false);
+                    mEndBtn.setVisibility(View.INVISIBLE);
+
                     mNextBtn.setText("Siguiente");
                     mBackBtn.setText("");
+                    mEndBtn.setText("");
                 }
                 else if ( i == mDots.length -1)
                 {
-                    mNextBtn.setEnabled(true);
+                    mNextBtn.setEnabled(false);
+                    mNextBtn.setVisibility(View.INVISIBLE);
+
                     mBackBtn.setEnabled(true);
                     mBackBtn.setVisibility(View.VISIBLE);
 
-                    mNextBtn.setText("Siguiente");
+                    mEndBtn.setEnabled(true);
+                    mEndBtn.setVisibility(View.VISIBLE);
+
+                    mNextBtn.setText("");
                     mBackBtn.setText("Atrás");
+                    mEndBtn.setText("Comenzar");
                 }
 
                 else
                 {
+
                     mNextBtn.setEnabled(true);
+                    mNextBtn.setVisibility(View.VISIBLE);
                     mBackBtn.setEnabled(true);
                     mBackBtn.setVisibility(View.VISIBLE);
 
+                    mEndBtn.setEnabled(false);
+                    mEndBtn.setVisibility(View.INVISIBLE);
+
                     mNextBtn.setText("Siguiente");
                     mBackBtn.setText("Atrás");
+                    mEndBtn.setText("");
                 }
         }
 
