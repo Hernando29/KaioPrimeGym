@@ -22,7 +22,8 @@
             android:name=".Inicio"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
         <activity android:name=".Login" />
-        <activity android:name=".MenuInicio"></activity>
+        <activity android:name=".MenuInicio" />
+        <activity android:name=".Medidas"></activity>
     </application>
 
 </manifest>
