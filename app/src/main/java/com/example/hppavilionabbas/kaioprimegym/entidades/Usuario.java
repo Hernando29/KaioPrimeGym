@@ -15,21 +15,21 @@ public class Usuario
     private String fechaNacimiento;
     private String foto;
 
-    public Usuario(int id, String nombre, String apellidos,
-                   String cedula, String edad, String sexo, String telefono, String contrasena,
-                   String correo, String fechaNacimiento, String foto) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.cedula = cedula;
-        this.edad = edad;
-        this.sexo = sexo;
-        this.telefono = telefono;
-        this.contrasena = contrasena;
-        this.correo = correo;
-        this.fechaNacimiento = fechaNacimiento;
-        this.foto = foto;
-    }
+   // public Usuario(int id, String nombre, String apellidos,
+     //              String cedula, String edad, String sexo, String telefono, String contrasena,
+       //            String correo, String fechaNacimiento, String foto) {
+        //this.id = id;
+        //this.nombre = nombre;
+        //this.apellidos = apellidos;
+        //this.cedula = cedula;
+        //this.edad = edad;
+        //this.sexo = sexo;
+        //this.telefono = telefono;
+        //this.contrasena = contrasena;
+      //  this.correo = correo;
+    //this.fechaNacimiento = fechaNacimiento;
+       // this.foto = foto;
+    //}
 
     public int getId() {
         return id;
