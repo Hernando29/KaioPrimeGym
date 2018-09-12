@@ -27,7 +27,9 @@ public class MenuInicio extends AppCompatActivity {
         btnAjustes = (Button) findViewById(R.id.btnAjustes);
         btnAlimentacion = (Button) findViewById(R.id.btnAlm);
 
-
+/**
+ * Hola
+ */
         btnMedidas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
